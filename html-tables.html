@@ -119,6 +119,7 @@
         <li>Ordered (<abbr title="Ordered List">ol</abbr>) and Unordered List (<abbr title="Unordered List">ul</abbr>) tags.</li>
         <li>Cite tag and basic a tag with href.</li>
     </ul>
+    <hr>
     <h2>Table with Merged Columns and Rows</h2>
     <h3>Objectives:</h3>
     <ol>
@@ -231,6 +232,238 @@
                 <li><b>colspan: </b> a td element which denotes how many columns to span across. It takes in an integer.</li>
                 <li><b>rowspan: </b> a td element which denotes how many row to span across. It takes in an integer. However, a rowspan value of 0, denotes that the row should span till the end.</li>
             </ol>
-    </ul>  
+    </ul> 
+    <hr> 
+    <h2>Styling Tables</h2>
+    <h3>Objectives:</h3>
+    <ul>
+        <li>Center align the table. <font style="color: green; font-weight: bold;">Done</font>.</li>
+        <li>Have an equal width for all columns except first. <font style="color: green; font-weight: bold;">Done</font>.</li>
+        <li>Colour light grey on Column Header and Row Headers. <font style="color: green; font-weight: bold;">Done</font>.</li>
+        <li>Make the border to single line. <font style="color: green; font-weight: bold;">Done</font></li>
+        <li>Add a background color to Recess, Lunch Break and Half Day <font style="color: green; font-weight: bold;">Done</font>.</li>
+    </ul>
+    <h3>Output: </h3>
+    <table border cellpadding="5" cellspacing="0" align="center">
+        <caption>7th Grade Time Table 2022</caption>
+        <colgroup>
+            <col style="background-color: lightgrey;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col" style="background-color: lightgray; width: 50px;">Period</th>
+                <th scope="col" style="background-color: lightgray; width: 125px;">Monday</th>
+                <th scope="col" style="background-color: lightgray; width: 125px;">Tuesday</th>
+                <th scope="col" style="background-color: lightgray; width: 125px;">Wednesday</th>
+                <th scope="col" style="background-color: lightgray; width: 125px;">Thursday</th>
+                <th scope="col" style="background-color: lightgray; width: 125px;">Friday</th>
+                <th scope="col" style="background-color: lightgray; width: 125px;">Saturday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mathematics</td>
+                <td>Geography</td>
+                <td>Hindi</td>
+                <td>Physics</td>
+                <td>PT</td>
+                <td>Computer</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Geography</td>
+                <td>Physics</td>
+                <td>Mathematics</td>
+                <td>Computer</td>
+                <td>Hindi</td>
+                <td>PT</td>
+            </tr>
+            <tr>
+                <th scope="row"></th>
+                <td colspan="6" align="center" style="background-color:gainsboro;"><b>15 Minutes Recess</b></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Physics</td>
+                <td>PT</td>
+                <td>Mathematics</td>
+                <td>Geography</td>
+                <td>Computer</td>
+                <td>Hindi</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>Computer</td>
+                <td>Physics</td>
+                <td>PT</td>
+                <td>Hindi</td>
+                <td>Mathematics</td>
+                <td>Geography</td>
+            </tr>
+            <tr>
+                <th scope="row"></th>
+                <td colspan="5" align="center" style="background-color:gainsboro;"><b>Lunch Break</b></td>
+                <td rowspan="0" align="center" style="background-color:gainsboro;"><b>Half Day</b></td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td>Hindi</td>
+                <td>Geography</td>
+                <td>Computer</td>
+                <td>PT</td>
+                <td>Physics</td>
+
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <td>PT</td>
+                <td>Mathematics</td>
+                <td>Hindi</td>
+                <td>Geography</td>
+                <td>Physics</td>
+
+            </tr>
+            <tr>
+                <th scope="row"></th>
+                <td colspan="5" align="center" style="background-color:gainsboro;"><b>15 Minutes Recess</b></td>
+            </tr>
+            <tr>
+                <th scope="row">7</th>
+                <td>Political Sciency</td>
+                <td>Biology</td>
+                <td>History</td>
+                <td>Chemistry</td>
+                <td>Arts & Craft</td>
+
+            </tr>
+            <tr>
+                <th scope="row">8</th>
+                <td>Biology</td>
+                <td>Political Sciency</td>
+                <td>Chemistry</td>
+                <td>History</td>
+                <td>Mathematics</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Learnings:</h3>
+    <ul>
+        <li>Learned row and col scope that can be applied to th tags.</li>
+        <li>Align attribute to align items to left/right/center. But deprecated now.</li>
+        <li>Learned to style using background-color.</li>
+        <li>Learned colgroup tag used to group columns.</li>
+        <li>Used cellpadding and cellspacing to remove double lines and also add some spaces around the text.</li>
+        <li>Used width attribute in style to make the column widths uniform.</li>
+    </ul>
+    <hr>
+    <h2>Inserting Images within Tables</h2>
+    <h3>Objectives:</h3>
+    <ul>
+        <li>Inserting an image for each subject.</li>
+    </ul>
+    <h3>Output: </h3>
+    <table border cellpadding="5" cellspacing="0" align="center">
+        <caption>7th Grade Time Table 2022</caption>
+        <colgroup>
+            <col style="background-color: lightgrey;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col" style="background-color: lightgray; width: 50px;">Days/Period</th>
+                <th scope="col" style="background-color: lightgray; width: 125px;">1</th>
+                <th scope="col" style="background-color: lightgray; width: 125px;">2</th>
+                <th scope="col" style="background-color: lightgray; width: 10px;"></th>
+                <th scope="col" style="background-color: lightgray; width: 125px;">3</th>
+                <th scope="col" style="background-color: lightgray; width: 125px;">4</th>
+                <th scope="col" style="background-color: lightgray; width: 10px;"></th>
+                <th scope="col" style="background-color: lightgray; width: 125px;">5</th>
+                <th scope="col" style="background-color: lightgray; width: 125px;">6</th>
+                <th scope="col" style="background-color: lightgray; width: 10px;"></th>
+                <th scope="col" style="background-color: lightgray; width: 125px;">7</th>
+                <th scope="col" style="background-color: lightgray; width: 125px;">8</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Monday</th>
+                <td align="center"><img src="https://img.icons8.com/external-rabit-jes-outline-color-rabit-jes/2x/external-mathematics-education-rabit-jes-outline-color-rabit-jes.png" alt="Mathematics" width="35"><br>Mathematics</td>
+                <td align="center"><img src="https://img.icons8.com/office/2x/globe-earth.png" alt="Geography" width="35"><br>Geography</td>
+                <td rowspan="0" align="center" style="background-color: lightgray; writing-mode: vertical-rl;
+                text-orientation: upright;"><b>B R E A K</b></td>
+                <td align="center"> <img src="https://cdn1.iconfinder.com/data/icons/unicons-line-vol-4/24/letter-hindi-a-64.png" alt="Hindi" width="35"><br>Hindi</td>
+                <td align="center"><img src="https://img.icons8.com/dusk/2x/physics.png" alt="Physics" width="35"><br>Physics</td>
+                <td rowspan="0" align="center" style="background-color: lightgray; writing-mode: vertical-rl;
+                text-orientation: upright;"><b>L U N C H B R E A K</b></td>
+                <td align="center"><img src="https://img.icons8.com/dusk/2x/football.png" alt="Physical Training" width="35"><br>PT</td>
+                <td align="center"><img src="https://img.icons8.com/external-flaticons-flat-flat-icons/2x/external-computer-science-computer-science-flaticons-flat-flat-icons.png" alt="Computer Science" width="35"><br>Computer</td>
+                <td rowspan="0" align="center" style="background-color: lightgray; writing-mode: vertical-rl;
+                text-orientation: upright;"><b>B R E A K</b></td>
+                <td align="center"><img src="https://img.icons8.com/external-flaticons-flat-flat-icons/2x/external-history-book-history-flaticons-flat-flat-icons-2.png" alt="History" width="35"><br> History</td>
+                <td align="center"><img src="https://img.icons8.com/color/2x/periodic-table-of-elements.png" alt="Chemistry" width="35"><br>Chemistry</td>
+            </tr>
+            <tr>
+                <th scope="row">Tuesday</th>
+                <td align="center"><img src="https://img.icons8.com/office/2x/globe-earth.png" alt="Geography" width="35"><br>Geography</td>
+                <td align="center"><img src="https://img.icons8.com/dusk/2x/physics.png" alt="Physics" width="35"><br>Physics</td>
+                <td align="center"><img src="https://img.icons8.com/external-rabit-jes-outline-color-rabit-jes/2x/external-mathematics-education-rabit-jes-outline-color-rabit-jes.png" alt="Mathematics" width="35"><br>Mathematics</td>
+                <td align="center"><img src="https://img.icons8.com/external-flaticons-flat-flat-icons/2x/external-computer-science-computer-science-flaticons-flat-flat-icons.png" alt="Computer Science" width="35"><br>Computer</td>
+                <td align="center"> <img src="https://cdn1.iconfinder.com/data/icons/unicons-line-vol-4/24/letter-hindi-a-64.png" alt="Hindi" width="35"><br>Hindi</td>
+                <td align="center"><img src="https://img.icons8.com/dusk/2x/football.png" alt="Physical Training" width="35"><br>PT</td>
+                <td align="center"><img src="https://img.icons8.com/plasticine/2x/leaf.png" alt="https://img.icons8.com/plasticine/2x/leaf.png" width="35"><br>Biology</td>
+                <td align="center"><img src="https://img.icons8.com/external-filled-outline-wichaiwi/2x/external-politics-general-data-protection-regulation-gdpr-filled-outline-wichaiwi.png" alt="Political Science" width="35"><br>Political Science</td>
+            </tr>
+            <tr>
+                <th scope="row">Wednesday</th>
+                <td align="center"><img src="https://img.icons8.com/dusk/2x/physics.png" alt="Physics" width="35"><br>Physics</td>
+                <td align="center"><img src="https://img.icons8.com/dusk/2x/football.png" alt="Physical Training" width="35"><br>PT</td>
+                <td align="center"><img src="https://img.icons8.com/external-rabit-jes-outline-color-rabit-jes/2x/external-mathematics-education-rabit-jes-outline-color-rabit-jes.png" alt="Mathematics" width="35"><br>Mathematics</td>
+                <td align="center"><img src="https://img.icons8.com/office/2x/globe-earth.png" alt="Geography" width="35"><br>Geography</td>
+                <td align="center"><img src="https://img.icons8.com/external-flaticons-flat-flat-icons/2x/external-computer-science-computer-science-flaticons-flat-flat-icons.png" alt="Computer Science" width="35"><br>Computer</td>
+                <td align="center"> <img src="https://cdn1.iconfinder.com/data/icons/unicons-line-vol-4/24/letter-hindi-a-64.png" alt="Hindi" width="35"><br>Hindi</td>
+                <td align="center"><img src="https://img.icons8.com/external-flaticons-flat-flat-icons/2x/external-history-book-history-flaticons-flat-flat-icons-2.png" alt="History" width="35"><br> History</td>
+                <td align="center"><img src="https://img.icons8.com/color/2x/periodic-table-of-elements.png" alt="Chemistry" width="35"><br>Chemistry</td>
+            </tr>
+            <tr>
+                <th scope="row">Thursday</th>
+                <td align="center"><img src="https://img.icons8.com/external-flaticons-flat-flat-icons/2x/external-computer-science-computer-science-flaticons-flat-flat-icons.png" alt="Computer Science" width="35"><br>Computer</td>
+                <td align="center"><img src="https://img.icons8.com/dusk/2x/physics.png" alt="Physics" width="35"><br>Physics</td>
+                <td align="center"><img src="https://img.icons8.com/dusk/2x/football.png" alt="Physical Training" width="35"><br>PT</td>
+                <td align="center"> <img src="https://cdn1.iconfinder.com/data/icons/unicons-line-vol-4/24/letter-hindi-a-64.png" alt="Hindi" width="35"><br>Hindi</td>
+                <td align="center"><img src="https://img.icons8.com/external-rabit-jes-outline-color-rabit-jes/2x/external-mathematics-education-rabit-jes-outline-color-rabit-jes.png" alt="Mathematics" width="35"><br>Mathematics</td>
+                <td align="center"><img src="https://img.icons8.com/office/2x/globe-earth.png" alt="Geography" width="35"><br>Geography</td>
+                <td align="center"><img src="https://img.icons8.com/plasticine/2x/leaf.png" alt="https://img.icons8.com/plasticine/2x/leaf.png" width="35"><br>Biology</td>
+                <td align="center"><img src="https://img.icons8.com/external-filled-outline-wichaiwi/2x/external-politics-general-data-protection-regulation-gdpr-filled-outline-wichaiwi.png" alt="Political Science" width="35"><br>Political Science</td>
+            </tr>
+            <tr>
+                <th scope="row">Friday</th>
+                <td align="center"> <img src="https://cdn1.iconfinder.com/data/icons/unicons-line-vol-4/24/letter-hindi-a-64.png" alt="Hindi" width="35"><br>Hindi</td>
+                <td align="center"><img src="https://img.icons8.com/office/2x/globe-earth.png" alt="Geography" width="35"><br>Geography</td>
+                <td align="center"><img src="https://img.icons8.com/external-flaticons-flat-flat-icons/2x/external-computer-science-computer-science-flaticons-flat-flat-icons.png" alt="Computer Science" width="35"><br>Computer</td>
+                <td align="center"><img src="https://img.icons8.com/dusk/2x/football.png" alt="Physical Training" width="35"><br>PT</td>
+                <td align="center"><img src="https://img.icons8.com/dusk/2x/physics.png" alt="Physics" width="35"><br>Physics</td>
+                <td align="center"><img src="https://img.icons8.com/external-flaticons-flat-flat-icons/2x/external-history-book-history-flaticons-flat-flat-icons-2.png" alt="History" width="35"><br> History</td>
+                <td align="center"><img src="https://img.icons8.com/color/2x/periodic-table-of-elements.png" alt="Chemistry" width="35"><br>Chemistry</td>
+                <td align="center"><img src="https://img.icons8.com/external-rabit-jes-outline-color-rabit-jes/2x/external-mathematics-education-rabit-jes-outline-color-rabit-jes.png" alt="Mathematics" width="35"><br>Mathematics</td>
+
+            </tr>
+            <tr>
+                <th scope="row">Saturday</th>
+                <td align="center"><img src="https://img.icons8.com/dusk/2x/football.png" alt="Physical Training" width="35"><br>PT</td>
+                <td align="center"><img src="https://img.icons8.com/external-rabit-jes-outline-color-rabit-jes/2x/external-mathematics-education-rabit-jes-outline-color-rabit-jes.png" alt="Mathematics" width="35"><br>Mathematics</td>
+                <td align="center"> <img src="https://cdn1.iconfinder.com/data/icons/unicons-line-vol-4/24/letter-hindi-a-64.png" alt="Hindi" width="35"><br>Hindi</td>
+                <td align="center"><img src="https://img.icons8.com/external-rabit-jes-outline-color-rabit-jes/2x/external-mathematics-education-rabit-jes-outline-color-rabit-jes.png" alt="Mathematics" width="35"><br>Mathematics</td>
+                <td colspan="5" align="center" style="background-color: lightgray;"><b>Half Day</b></td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Learnings: </h3>
+    <ul>
+        <li>Image tags with src, alt and width.</li>
+    </ul>
+    <hr>
+    <footer>
+        <p style="text-align: center;">This is a document from <a href="https://zarnik.com/about-us/">Azhar Umar</a>'s coding journey with <a href="https://ineuron.ai/">iNeuron</a>.</p>
+    </footer>
 </body>
 </html>
