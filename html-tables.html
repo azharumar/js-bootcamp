@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table - School Time Table</title>
+</head>
+<body>
+    <h1>Learing <strong>HTML Tables</strong> by Creating School Time Table</h1>
+    <p>This page is all about learning HTML tables by taking school time table as a use case. While learing to use these tables, I came accross lot of other HTML functionalities which had to be used in this same document. I have appended the same in the learnings section.</p>
+    <p>Each section is divided into <em>Objectives</em>, <em>Output</em> and <em>Learnings</em>.</p>
+    <h2>Simple Table</h2>
+    <h3>Objectes:</h3>
+    <p>Create a simple school time table using only the basic HTML tags.</p>
+    <h3>Output: </h3>
+    <table border>
+        <caption>7th Grade Time Table 2022</caption>
+        <thead>
+            <tr>
+                <th>Period</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td>Mathematics</td>
+                <td>Geography</td>
+                <td>Hindi</td>
+                <td>Physics</td>
+                <td>PT</td>
+                <td>Computer</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>Geography</td>
+                <td>Physics</td>
+                <td>Mathematics</td>
+                <td>Computer</td>
+                <td>Hindi</td>
+                <td>PT</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>Physics</td>
+                <td>PT</td>
+                <td>Mathematics</td>
+                <td>Geography</td>
+                <td>Computer</td>
+                <td>Hindi</td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td>Computer</td>
+                <td>Physics</td>
+                <td>PT</td>
+                <td>Hindi</td>
+                <td>Mathematics</td>
+                <td>Geography</td>
+            </tr>
+            <tr>
+                <th>5</th>
+                <td>Hindi</td>
+                <td>Geography</td>
+                <td>Computer</td>
+                <td>PT</td>
+                <td>Physics</td>
+                <td>Mathematics</td>
+            </tr>
+            <tr>
+                <th>6</th>
+                <td>PT</td>
+                <td>Mathematics</td>
+                <td>Hindi</td>
+                <td>Geography</td>
+                <td>Physics</td>
+                <td>Computer</td>
+            </tr>
+            <tr>
+                <th>7</th>
+                <td>Political Sciency</td>
+                <td>Biology</td>
+                <td>History</td>
+                <td>Chemistry</td>
+                <td>Arts & Craft</td>
+                <td>Mathematics</td>
+            </tr>
+            <tr>
+                <th>8</th>
+                <td>Biology</td>
+                <td>Political Sciency</td>
+                <td>Chemistry</td>
+                <td>History</td>
+                <td>Mathematics</td>
+                <td>Arts & Craft</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Learnings:</h3>
+    <ul>
+        <li>Caption tag for tables.</li>
+        <li>Basic border attribute for tables.</li>
+        <li>Table Header (<abbr title="Table Header">th</abbr>) tag inside Table Row Element (<abbr title="Table Row">tr</abbr>) for highlighting the column as header.</li>
+        <li>What are Table Head (<abbr title="Table Head">thead</abbr>) and Table Body(<abbr title="Table Bodey">tbody</abbr>) tags.</li>
+        <li>How to use Abbreviation (<abbr title="Abbreviation">abbr</abbr>) tags</li>
+        <li>Tags vs Elements vs Attributes in HTML</li>
+        <ol>
+            <li><strong>Tags: </strong>Tags are the starting and ending parts of an HTML element. They begin with < symbol and end with > symbol. Whatever written inside < and > are called tags.</li>
+            <li><strong>Elements: </strong>Elements enclose the contents in between the tags. They consist of some kind of structure or expression. It generally consists of a start tag, content and an end tag.</li>
+            <li><strong>Attributes: : </strong>It is used to define the character of an HTML element. It always placed in the opening tag of an element. It generally provides additional styling (attribute) to the element.</li>
+            <cite><a href="https://www.geeksforgeeks.org/tags-vs-elements-vs-attributes-in-html/">GeeksforGeeks</a></cite>
+        </ol>
+        <li>Ordered (<abbr title="Ordered List">ol</abbr>) and Unordered List (<abbr title="Unordered List">ul</abbr>) tags.</li>
+        <li>Cite tag and basic a tag with href.</li>
+    </ul>
+    <h2>Table with Merged Columns and Rows</h2>
+    <h3>Objectives:</h3>
+    <ol>
+        <li>Adding a recess after 2nd and 6th period.</li>
+        <li>Adding a lunch break after 4th period.</li>
+        <li>And Saturday to be a half day.</li>
+    </ol>
+    <h3>Output:</h3>
+    <table border>
+        <caption>7th Grade Time Table 2022</caption>
+        <thead>
+            <tr>
+                <th>Period</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td>Mathematics</td>
+                <td>Geography</td>
+                <td>Hindi</td>
+                <td>Physics</td>
+                <td>PT</td>
+                <td>Computer</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>Geography</td>
+                <td>Physics</td>
+                <td>Mathematics</td>
+                <td>Computer</td>
+                <td>Hindi</td>
+                <td>PT</td>
+            </tr>
+            <tr>
+                <td colspan="7" align="center"><b>15 Minutes Recess</b></td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>Physics</td>
+                <td>PT</td>
+                <td>Mathematics</td>
+                <td>Geography</td>
+                <td>Computer</td>
+                <td>Hindi</td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td>Computer</td>
+                <td>Physics</td>
+                <td>PT</td>
+                <td>Hindi</td>
+                <td>Mathematics</td>
+                <td>Geography</td>
+            </tr>
+            <tr>
+                <td colspan="6" align="center"><b>Lunch Break</b></td>
+                <td rowspan="0" align="center"><b>Half Day</b></td>
+            </tr>
+            <tr>
+                <th>5</th>
+                <td>Hindi</td>
+                <td>Geography</td>
+                <td>Computer</td>
+                <td>PT</td>
+                <td>Physics</td>
+
+            </tr>
+            <tr>
+                <th>6</th>
+                <td>PT</td>
+                <td>Mathematics</td>
+                <td>Hindi</td>
+                <td>Geography</td>
+                <td>Physics</td>
+
+            </tr>
+            <tr>
+                <td colspan="6" align="center"><b>15 Minutes Recess</b></td>
+            </tr>
+            <tr>
+                <th>7</th>
+                <td>Political Sciency</td>
+                <td>Biology</td>
+                <td>History</td>
+                <td>Chemistry</td>
+                <td>Arts & Craft</td>
+
+            </tr>
+            <tr>
+                <th>8</th>
+                <td>Biology</td>
+                <td>Political Sciency</td>
+                <td>Chemistry</td>
+                <td>History</td>
+                <td>Mathematics</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Learnings: </h3>
+    <ul>
+        <li>colspan and rowspan:</li>
+            <ol>
+                <li><b>colspan: </b> a td element which denotes how many columns to span across. It takes in an integer.</li>
+                <li><b>rowspan: </b> a td element which denotes how many row to span across. It takes in an integer. However, a rowspan value of 0, denotes that the row should span till the end.</li>
+            </ol>
+    </ul>  
+</body>
+</html>
