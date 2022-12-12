@@ -1,0 +1,37 @@
+<table width="100%" border style="border-color:lightgray; font-size: 10px; margin-top: 20px; margin-bottom: 20px;">
+    <thead>
+        <tr>
+            <th width="5%" style="text-align: center;">Sr</th>
+            <th width="20%" style="text-align: center;">Image</th>
+            <th width="40%" style="text-align: left;">Product Details</th>
+            <th width="10%" style="text-align: center;">Qty</th>
+            <th width="10%" style="text-align: center;">Rate</th>
+            <th width="15%" style="text-align: right;">Amount</th>
+        </tr>
+    </thead>
+    <tbody>
+        {%- for row in doc.items -%}
+        <tr>
+            <td style="text-align: center;">{{ row.idx }}</td>
+            <td style="text-align: right;">
+            {% if row.image -%}
+            <img src="{{row.image}}" alt="{{row.item_name}}" class="img-responsive">
+            {%- endif %}
+            </td>
+            <td style="text-align: left;">
+                {% if row.item_name -%}{{row.item_name}}<br>{%- endif %} 
+                {% if row.brand -%} | <b>Brand: </b> {{row.brand}}{%- endif %}<br>
+                {% if row.item_code -%} <b>Item Code: </b> {{row.item_code}}<br>{%- endif %} 
+                {% if row.gst_hsn_code -%} <b>HS Code: </b> {{row.gst_hsn_code}} | {%- endif %}
+                {% if row.item_tax_template -%}{{row.item_tax_template}}<br>{%- endif %} 
+                {% if row.additional_notes -%} <b>Notes: </b> {{row.additional_notes}}{% endif %}
+            </td>
+            <td style="text-align: center;">
+                {{row.qty}} {{row.uom}}
+            </td>
+            <td style="text-align: right;">{{row.get_formatted("rate", doc) }}</td>
+            <td style="text-align: right;">{{row.get_formatted("amount", doc) }}</td>
+        </tr>
+        {%- endfor -%}
+    </tbody>
+</table>
