@@ -8,3 +8,4 @@ This repository is from my JavaScript Bootcamp with iNeuron.
 - Learned the basics of markdown language. And this is a file created with the same.
 - Learned to push to git.
 - Configured Netlify.
+- Started the assignment on replicating VS Code landing Page and completed the header.
