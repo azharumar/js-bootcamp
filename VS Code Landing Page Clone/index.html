@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
     <script>
         tailwind.config = {
           theme: {
@@ -15,8 +16,8 @@
     <title>VS Code Landing Page Clone (For Learning Purpose Only)</title>
 </head>
 <body>
-    <header class="bg-neutral-800 shadow-md fixed top-0 left-0 right-0">
-        <nav class="flex items-center flex-wrap container mx-auto max-w-screen-lg gap-4 ">
+    <header class="bg-neutral-800 shadow-md fixed w-screen">
+        <nav class="flex justify-evenly items-center flex-wrap container mx-auto max-w-6xl gap-4 ">
             <a href="#" class="flex">
                 <img class="w-6" src="./logo.svg" alt="Logo of Visual Studio Code">
                 <span class="text-lg text-white font-regular px-3">Visual Studio Code</span>  
@@ -30,11 +31,13 @@
                 <li class="hover:text-neutral-100"><a href="https://code.visualstudio.com/docs/supporting/faq">FAQ</a></li>
                 <li class="hover:text-neutral-100"><a href="https://code.visualstudio.com/learn">Learn</a></li>
             </ul> 
-            <a href="#" class="flex h-12">
-                <input class="bg-neutral-700 text-white px-5" type="text" name="Search Docs" id="search_docs" placeholder="Search Docs">
-                <button class="text-white bg-blue-700 px-5">Download</button>
-            </a>  
-
+            <div class="flex content-end h-12 bg-neutral-700 right-0">
+                <button type="submit" class="rotate-90 text-white">
+                    <i class="icon-magnifier px-2"></i>
+                  </button>
+                <input class="bg-neutral-700 text-white px-2 w-36" type="text" name="Search Docs" id="search_docs" placeholder="Search Docs">
+                <button class="text-white bg-blue-700 px-5"><i class="icon-arrow-down-circle pr-2"></i>Download</button>
+            </div> 
         </nav>
     </header>
         <div>
