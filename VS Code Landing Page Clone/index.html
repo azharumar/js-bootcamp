@@ -17,12 +17,12 @@
 </head>
 <body>
     <header class="bg-neutral-800 shadow-md fixed w-screen">
-        <nav class="flex items-center flex-wrap container mx-auto max-w-6xl gap-4 ">
+        <nav class="flex items-center flex-wrap container mx-auto max-w-6xl gap-0 ">
             <a href="#" class="flex">
-                <img class="w-6" src="./logo.svg" alt="Logo of Visual Studio Code">
+                <img class="w-6" src="./assets/logo.svg" alt="Logo of Visual Studio Code">
                 <span class="text-lg text-white font-regular px-3">Visual Studio Code</span>  
             </a>
-            <ul class="flex w-1/2 gap-4 font-regular text-neutral-400">
+            <ul class="flex w-1/2 gap-4 font-regular text-neutral-400 ml-8">
                 <li class="hover:text-neutral-100"><a href="https://code.visualstudio.com/docs">Docs</a></li>
                 <li class="hover:text-neutral-100"><a href="https://code.visualstudio.com/updates">Updates</a></li>
                 <li class="hover:text-neutral-100"><a href="https://code.visualstudio.com/blogs">Blog</a></li>
@@ -31,13 +31,12 @@
                 <li class="hover:text-neutral-100"><a href="https://code.visualstudio.com/docs/supporting/faq">FAQ</a></li>
                 <li class="hover:text-neutral-100"><a href="https://code.visualstudio.com/learn">Learn</a></li>
             </ul> 
-            <div class="flex content-end h-12 bg-neutral-700 right-0">
-                <button type="submit" class="rotate-90 text-white">
-                    <i class="icon-magnifier px-2"></i>
-                  </button>
-                <input class="bg-neutral-700 text-white px-2 w-36" type="text" name="Search Docs" id="search_docs" placeholder="Search Docs">
-                <button class="text-white bg-blue-700 px-5"><i class="icon-arrow-down-circle pr-2"></i>Download</button>
+            <div class="flex items-center h-12 text-white bg-neutral-700 right-0 border border-neutral-700 hover:bg-neutral-600 hover:border hover:border-neutral-400">
+                <a class="icon-magnifier pl-4 pr-2"></a>
+                <input class="px-2 w-36 bg-inherit focus:outline-0" type="text" name="Search Docs" id="search_docs" placeholder="Search Docs">
             </div> 
+            <button class="flex h-12 text-white bg-blue-700 px-5 hover:bg-blue-800 mx-0 items-center">
+                <i class="icon-arrow-down-circle pr-2"></i>Download</button>
         </nav>
     </header>
         <div>
