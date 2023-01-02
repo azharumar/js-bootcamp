@@ -1,0 +1,12 @@
+body {
+background-color: #f1f1f1;
+}
+
+.button{
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.button:hover{
+    text-align: left;
+}
