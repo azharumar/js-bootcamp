@@ -4,11 +4,17 @@ This repository is from my JavaScript Bootcamp with iNeuron.
 
 ## Learning Log
 
-### 2-December-2023
+### 3-January-2023
+- Using props in components.
+- States/Hooks with increment and decrement app.
+
+
+### 2-January-2023
 - Created Hello World app.
 - How to convert HTML to a React App.
+- Split into components
 
-### 1-December-2023
+### 1-January-2023
 - Installing MongoDB on local server and MongoDB Atlas.
 - GET and POST forms.
 - Installing React on windows.
